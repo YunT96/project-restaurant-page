@@ -6,7 +6,8 @@ const aboutDOMController = (function () {
     const content = document.getElementById("content");
 
     function renderAbout() {
-
+        content.innerHTML = "";
+        
         const html = `
         <div class="black-background">
         <div class="about">

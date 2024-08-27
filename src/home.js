@@ -1,16 +1,18 @@
 import "./styles.css";
-import carousel1 from "./images/carousel1.webp";
+import carousel1Url from "./images/carousel1.webp?url";
+
 
 const homeDOMController = (function () {
 
     const content = document.getElementById("content");
 
     function renderHome() {
+        content.innerHTML = "";
 
         const html = `
         <div class="black-background">
             <div class="image-card">
-                <img src="${carousel1}" alt="">
+                <img src="${carousel1Url}" alt="" loading="lazy">
             </div>
             <div class="welcome">
                 <h1>

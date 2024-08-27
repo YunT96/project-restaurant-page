@@ -5,6 +5,7 @@ const menuDOMController = (function () {
     const content = document.getElementById("content");
 
     function renderMenu() {
+        content.innerHTML = "";
 
         const html = `
         <div class="black-background">
